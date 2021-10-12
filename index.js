@@ -22,10 +22,18 @@ const addLi = function() {
     navbarLink.parentNode.appendChild(newATag);
     navbarUl.appendChild(navbarLink)
 }
-addLi()
-    // EX12) Write a function to change the color of the main title
 
+// EX12) Write a function to change the color of the main title
+
+const mainTitle = document.querySelector("main>div.row>div.blog-main h3").style.color = "red"
+
+/*  */
 // EX13) Write a function to change the background of the jumbotron
+const jumbotron = document.querySelector("div.jumbotron")
+jumbotron.classList.remove("bg-dark")
+jumbotron.style.backgroundColor = "orange"
+console.log(jumbotron)
+
 
 // EX14) Write a function to remove all the links under "Elsewhere"
 
