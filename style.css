@@ -73,7 +73,7 @@ div>div.blog-post:nth-of-type(2) p.blog-post-meta a {
 
 /* EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly */
 
-footer.blog-footer a:last-of-type {
+footer.blog-footer p:last-child a:last-of-type {
     color: rgb(255, 0, 0);
 }
 
