@@ -47,6 +47,9 @@ const changeSizeOfColumnH1 = function() {
 changeSizeOfColumnH1()
 
 // EX16) Write a function to remove the "Search" magnifying glass icon
-
-
-// EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
+const searchmagnifier = document.querySelector("header>div.row div:last-child a:first-child")
+const eraseMagnifier = function() {
+    searchmagnifier.innerHTML = ""
+}
+eraseMagnifier()
+    // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
