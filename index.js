@@ -33,8 +33,13 @@ jumbotron.classList.remove("bg-dark")
 jumbotron.style.backgroundColor = "orange"
 console.log(jumbotron)
 
-
 // EX14) Write a function to remove all the links under "Elsewhere"
+
+const eraseLink = document.querySelector("aside>div:last-of-type>ol.list-unstyled")
+const eraseL = function() {
+    eraseLink.innerHTML = "";
+}
+eraseL()
 
 // EX15) Write a function to change the column size for heading in jumbotron
 
