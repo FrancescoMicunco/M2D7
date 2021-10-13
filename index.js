@@ -17,8 +17,6 @@ const navbarUl = document.querySelector("nav.nav.d-flex")
 const addLi = function() {
     let newATag = document.createElement("a")
     newATag.innerHTML = `<a class="p-2 text-muted" href="#">New One</a>`
-    console.log(newATag)
-        //navbarLink.parentNode.appendChild(newATag);
     navbarUl.appendChild(newATag)
 }
 addLi()
@@ -26,12 +24,10 @@ addLi()
 
 const mainTitle = document.querySelector("main>div.row>div.blog-main h3").style.color = "red"
 
-/*  */
 // EX13) Write a function to change the background of the jumbotron
 const jumbotron = document.querySelector("div.jumbotron")
 jumbotron.classList.remove("bg-dark")
 jumbotron.style.backgroundColor = "orange"
-console.log(jumbotron)
 
 // EX14) Write a function to remove all the links under "Elsewhere"
 
@@ -43,5 +39,14 @@ eraseL()
 
 // EX15) Write a function to change the column size for heading in jumbotron
 
+const titleInTheJumbo = document.querySelector("div.jumbotron div.col-md-6")
+console.log(titleInTheJumbo)
+const changeSizeOfColumnH1 = function() {
+    titleInTheJumbo.classList.remove("col-md-6");
+}
+changeSizeOfColumnH1()
+
 // EX16) Write a function to remove the "Search" magnifying glass icon
+
+
 // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
