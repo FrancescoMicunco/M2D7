@@ -13,17 +13,16 @@
                                               */
 // EX11) Write a function to add a new link into the navbar
 const navbarLink = document.querySelector("nav.nav.d-flex a:last-child")
-console.log(navbarLink)
 const navbarUl = document.querySelector("nav.nav.d-flex")
-console.log(navbarUl)
 const addLi = function() {
-    let newATag = document.createElement("a").innerText = `a class="p-2 text-muted" href="#">New One</a>`
+    let newATag = document.createElement("a")
+    newATag.innerHTML = `<a class="p-2 text-muted" href="#">New One</a>`
     console.log(newATag)
-    navbarLink.parentNode.appendChild(newATag);
-    navbarUl.appendChild(navbarLink)
+        //navbarLink.parentNode.appendChild(newATag);
+    navbarUl.appendChild(newATag)
 }
-
-// EX12) Write a function to change the color of the main title
+addLi()
+    // EX12) Write a function to change the color of the main title
 
 const mainTitle = document.querySelector("main>div.row>div.blog-main h3").style.color = "red"
 
