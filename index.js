@@ -7,9 +7,9 @@
       
       
       
-      EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
-      EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
-      EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
+      
+      
+      
                                               */
 // EX11) Write a function to add a new link into the navbar
 const navbarLink = document.querySelector("nav.nav.d-flex a:last-child")
@@ -40,7 +40,6 @@ eraseL()
 // EX15) Write a function to change the column size for heading in jumbotron
 
 const titleInTheJumbo = document.querySelector("div.jumbotron div.col-md-6")
-console.log(titleInTheJumbo)
 const changeSizeOfColumnH1 = function() {
     titleInTheJumbo.classList.remove("col-md-6");
 }
@@ -53,3 +52,29 @@ const eraseMagnifier = function() {
 }
 eraseMagnifier()
     // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
+
+const blogPost = document.querySelectorAll("div>div.blog-post p:nth-child(2)")
+
+const extractChar = function() {
+        for (let i = 0; i < blogPost.length; i++) {
+            blogPost[i]
+        }
+    }
+    // EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
+
+/* const lastBlogPost = querySelector("")
+console.log(lastBlogPost) */
+
+// EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
+
+/* const olderBtn = document.querySelector("")
+const attachButton = function() {
+
+
+} */
+// EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
+
+const alertName = document.querySelectorAll("div>div.blog-post p.blog-post-meta a");
+const authorName = function() {
+    this.alertName = alert(alertName)
+}
